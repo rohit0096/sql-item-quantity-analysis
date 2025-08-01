@@ -31,7 +31,7 @@ sql_item_quantity_project/
 │
 ├── sql/
 │   ├── create_tables.sql        # SQL script to create necessary tables
-│   └── analysis_query.sql       # Final SQL query for objective
+│   └── insert_data.sql       # Final SQL query for objective
 │
 ├── tests/
 │   └── test_cases.sql           # Test data for verification
@@ -42,28 +42,6 @@ sql_item_quantity_project/
 └── README.md                    # Project summary and instructions
 ```
 
-## 🧪 Test Case
-
-To validate logic, the following test case is used:
-
-| Customer | Age | Item | Quantity |
-|----------|-----|------|----------|
-| 1        | 21  | X    | 10       |
-| 2        | 23  | X    | 1        |
-| 2        | 23  | Y    | 1        |
-| 2        | 23  | Z    | 1        |
-| 3        | 35  | Z    | 2        |
-
-Expected CSV Output:
-
-```
-Customer;Age;Item;Quantity
-1;21;x;10
-2;23;x;1
-2;23;y;1
-2;23;z;1
-3;35;z;2
-```
 
 ## 🛠️ Technologies Used
 
@@ -77,6 +55,6 @@ Customer;Age;Item;Quantity
 
 1. Ensure SQL Server is running and test tables are created (`sql/create_tables.sql`).
 2. Configure your `config.py` with the correct server and database details.
-3. Run `extract_sql.py` to generate the output using SQL logic.
-4. Run `extract_pandas.py` to generate the same output using Pandas.
-5. Check the CSV output in `output/final_result.csv`.
+3. Run `analysis_query.sql` to generate the output using SQL logic.
+4. Run `run_panads_analysis.py` to generate the same output using Pandas.
+5. Check the CSV output in `src/customer_item_quantities.csv`.
