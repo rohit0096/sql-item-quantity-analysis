@@ -4,8 +4,8 @@
 config = {
     'server': r'(localdb)\MSSQLLocalDB',
     'database': 'SalesDB',
-    'username': 'sa',
-    'password': 'Rohit@08',
+    'username': '**',
+    'password': '****',
     'driver': 'ODBC Driver 17 for SQL Server'  # Or 19 if available and installed
 }
 
