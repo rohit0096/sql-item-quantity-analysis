@@ -34,7 +34,7 @@ sql_item_quantity_project/
 │   └── insert_data.sql       # Final SQL query for objective
 │
 ├── tests/
-│   └── test_cases.sql           # Test data for verification
+│   └── test_analysis.py          # Test data for verification
 │
 ├── output/
 │   └── customer_item_quantities.csv         # Output file
